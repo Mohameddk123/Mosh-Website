@@ -1,0 +1,356 @@
+:root {
+    --color-primary: #2584ff;
+    --color-secondary: #00d9ff;
+    --color-accent: #ff3400;
+    --color-headings: #1b0760;
+    --color-body: #918ca4;
+    --color-border: #ccc;
+    --border-raduis: 30px;
+}
+/*typoghraphy*/
+html {
+    font-size: 62.5%;
+    margin-left: 30px;
+}
+body {
+    font-family:  "Inter", Arial, Helvetica, sans-serif;
+    color: var(--color-body);
+    font-size: 2.4rem;
+    line-height: 1.5;
+    overflow-x: hidden;
+   
+}
+h1, h2 {
+    color: var(--color-headings); 
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 7rem;
+}
+h2 {
+    font-size: 4rem;
+}
+h3 {
+    font-size: 3rem;
+}
+img {
+    width: 500px;
+}
+p {
+    margin-top: 0;
+}
+@media screen and (max-width: 700px) {
+    body {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+    h1 {
+        font-size: 8rem;
+    }
+    h2 {
+        font-size: 4rem;
+    }
+    h3 {
+        font-size: 2.4rem;
+    }
+    img {
+        width: 70%;
+        transition: width 0.15s;
+    }
+    img:hover {
+        width: 75%;
+    }
+}
+/*Links*/
+a {
+    text-decoration: none;
+}
+.link-arrow {
+    color: var(--color-accent);
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.link-arrow::after {
+    content: "-->";
+    margin-left: 5px;
+    transition: margin 0.15s;
+}
+.link-arrow:hover::after {
+    margin-left: 15px;
+}
+/*input-and-button*/
+.inpt {
+    border-radius: var(--border-raduis);
+    border: 1px solid var(--color-border);
+    color: var  (--color-headings );
+    font-size: 2rem;
+    outline: 0;
+    padding: 2rem 3.5rem;
+}
+
+
+::placeholder {
+    color: #cdcbd7;
+}
+
+.input-group {
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-raduis);
+    width: 50% ;
+    display: flex;
+    margin-bottom: 90px;
+    margin-top: 30px;
+    
+}
+.input-group .inpt {
+    border: 0;
+    flex-grow: 1;
+    
+    
+}
+
+.btn {
+    padding: 10px 15px ;
+    border: 1px solid transparent;
+    border-radius: 30px;
+    background-color: var(--color-accent);
+    color: white;
+    margin: 5px;
+    transition: padding 0.20s;
+}
+.btn:hover {
+    padding: 10px 35px ;
+}
+
+
+/*Plan*/
+.plan {
+    background-color: var(--color-secondary);
+    margin-left: 20px;
+    margin-top: 40px;
+    border-radius: 10px;
+    transition: margin-top 0.30s;
+    
+}
+.plan:hover {
+    margin-top: 20px;
+}
+
+
+header {
+    margin-left: 3rem;
+    margin-top: rem;
+    padding-top: 2rem;
+    height: 120px;
+}
+header span {
+    display: inline-flex; 
+    color: white;
+}
+
+.plan--name {
+    color: white;
+    margin: 0;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.plan--price {
+    font-size: 4.8rem;
+}
+.plan--billing-cycle {
+    font-size: 1.6rem;
+    font-weight: 500;
+    opacity: 0.9;
+    
+}
+.plan--badge-small {
+    background-color: #02cdf1;
+    font-size: 1.2rem;
+    font-weight: 800;
+    border-radius: 2rem;
+    padding: 0.5rem 1.5rem;
+    margin-left: 1rem;
+}
+.plan--description {
+    font-size: 2rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+.second-plan {
+    background-color: white;
+    box-shadow: 0px 0px 25px  rgb(219, 212, 212);
+}
+
+.list {
+    
+    color: var(--color-headings);
+    font-size: 19px;
+    height: 250px; 
+    position: relative;
+    top: 30px;    
+    
+}
+
+.list__items {
+    margin-top: 20px;
+    margin-left: 13px;
+  
+}
+.button-1 {
+    color: var(--color-headings);
+    padding: 18px 100px;
+    background-color: white;
+    position: relative;
+    border: 2px solid var(--color-headings);
+    left: 36px;
+    bottom: 30px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 40px;
+    transition: background-color 0.15s;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.button-1:hover {
+    background-color: var(--color-headings);
+    color: white;
+}
+
+
+/*different card*/
+
+.plan2 {
+    background-color: var(--color-primary);
+    
+    margin-top: 10px;
+    border-radius: 10px;
+    transition: margin-top 0.30s;
+}
+.plan2:hover {
+    margin-top: -10px;
+}
+
+.card2--primary {
+    margin-left: 3rem;
+    margin-top: rem;
+    padding-top: 2rem;
+    height: 140px;
+}
+.plan2--name {
+    color: white;
+    margin: 0;
+    font-weight: 700;
+    font-size: 2rem;
+}
+.plan2--price {
+    font-size: 4.8rem;
+}
+.plan2--billing-cycle {
+    font-size: 1.8rem;
+    font-weight: 500;
+    opacity: 0.9;
+    
+}
+.plan2--badge-small {
+    background-color: #02cdf1;
+    font-size: 1.3rem;
+    font-weight: 800;
+    border-radius: 2rem;
+    padding: 0.5rem 1.5rem;
+    margin-left: 1rem;
+}
+.plan2--description {
+    font-size: 2.1rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-top: 18px;
+}
+.second-plan2 {
+    background-color: white;
+    box-shadow: 0px 0px 25px  rgb(219, 212, 212);
+}
+
+.list2 {
+    
+    color: var(--color-headings);
+    font-size: 21px;
+    height: 280px; 
+    position: relative;
+    top: 30px;    
+    
+}
+
+.list2__items {
+    margin-top: 20px;
+    margin-left: 13px;
+    
+}
+.button2 {
+    color: var(--color-headings);
+    padding: 23px 100px;
+    background-color: white;
+    position: relative;
+    border: 2px solid var(--color-headings);
+    left: 29px;
+    bottom: 47px;
+    font-size: 17px;
+    font-weight: 600;
+    border-radius: 40px;
+    transition: background-color 0.15s;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.button2:hover {
+    background-color: var(--color-headings);
+    color: white;
+}
+
+.the-three-card {
+    
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    
+} 
+@media screen and (max-width: 600px) {
+    .the-three-card {
+        display: block;
+    }
+    .plan {
+        width: 800px;
+    }
+    
+}
+/*Media*/
+
+div i {
+    margin-top: 8rem;
+    font-size: 4.3rem;
+    color: var(--color-primary);
+}
+.gallery {
+    display: flex;
+    margin-top: none;
+}
+.gallery-title {
+    color: var(--color-headings);
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.gallery-title::before {
+    content: "___";
+
+}
+
+
+.gallery-parag {
+    position: relative;
+    top: 30px;
+    left: 20px;
+
+}
